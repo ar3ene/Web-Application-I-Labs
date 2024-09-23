@@ -106,4 +106,18 @@ myFilmLibrary.addNewFilm(new Film(1, "Escape", isFavorite = true, "2021-01-15", 
 myFilmLibrary.addNewFilm(new Film(2, "God Father", isFavorite = true, "2023-03-15", 5, personId = 1));
 console.log(myFilmLibrary.films);
 
-// 2. Add functionalities to the Film Library
+console.log("***** Movie List *****");
+console.log(myFilmLibrary.sortByDate());
+
+myFilmLibrary.deleteFilm(2);
+
+console.log("***** Updated List *****"); 
+console.log(myFilmLibrary.films);
+
+myFilmLibrary.resetWatchedFilms();
+
+console.log("***** Updated List *****");
+console.log(myFilmLibrary.films);
+
+console.log("***** Rated Movies *****");
+console.log(myFilmLibrary.getRated()); 
