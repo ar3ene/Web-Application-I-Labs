@@ -33,12 +33,13 @@ function firstTwoLastTwo(str) {
 // Then, implement the addNewFilm method, which adds a new Film object, passed as parameter, to the
 // FilmLibrary. Populate the FilmLibrary using this method.
 // To conclude, print in the console the entire list of Films stored in the FilmLibrary, with all their fields.
+const dayjs = require('dayjs');
 
 function Film(id, title, isFavorite = false, dateWatched, rating, personId = 1) {
     this.id = id;
     this.title = title;
     this.isFavorite = isFavorite;
-    this.dateWatched = dateWatched;
+    this.dateWatched = dateWatched ? dayjs(dateWatched) : undefined;
     this.rating = rating;
     this.personId = personId;
 }
