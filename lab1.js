@@ -55,4 +55,4 @@ myFilmLibrary.addNewFilm(new Film(1, "Escape"));
 myFilmLibrary.addNewFilm(new Film(2, "God Father", true, "2023-03-15", 5));
 console.log(myFilmLibrary.films);
 
-let myFilmLibrary2 = new FilmLibrary();
+
