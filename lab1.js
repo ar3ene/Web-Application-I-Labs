@@ -12,10 +12,10 @@ function firstTwoLastTwo(str) {
     console.log(newStr);
   }
 
-// firstTwoLastTwo("spring");
-// firstTwoLastTwo("firsttwolasttwo");
-// firstTwoLastTwo("a");
-// firstTwoLastTwo("at");
+firstTwoLastTwo("spring");
+firstTwoLastTwo("firsttwolasttwo");
+firstTwoLastTwo("a");
+firstTwoLastTwo("at");
 
 
 // 1. Create a Film Library
