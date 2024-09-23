@@ -34,7 +34,7 @@ function firstTwoLastTwo(str) {
 // FilmLibrary. Populate the FilmLibrary using this method.
 // To conclude, print in the console the entire list of Films stored in the FilmLibrary, with all their fields.
 
-function Film(id, title, personId = 1, isFavorite = false, dateWatched, rating) {
+function Film(id, title, isFavorite = false, dateWatched, rating, personId = 1) {
     this.id = id;
     this.title = title;
     this.isFavorite = isFavorite;
@@ -51,8 +51,8 @@ function FilmLibrary() {
 }
 
 let myFilmLibrary = new FilmLibrary();
-myFilmLibrary.addNewFilm(new Film(1, "Escape")); 
-myFilmLibrary.addNewFilm(new Film(2, "God Father", true, "2023-03-15", 5));
+myFilmLibrary.addNewFilm(new Film(1, "Escape", isFavorite = true, "2021-01-15", 5, personId = 1)); 
+myFilmLibrary.addNewFilm(new Film(2, "God Father", isFavorite = true, "2023-03-15", 5, personId = 1));
 console.log(myFilmLibrary.films);
 
-
+// 2. Add functionalities to the Film Library
